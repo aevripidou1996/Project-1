@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's All Eats</title>
+    <!-- Links for stylesheet and Bulma Libraries -->
+    <link rel="resetsheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <title>It's All Eats</title>
 </head>
 <body>
     <!-- <h1 class="is-size-1 is-bold is-italic">Its All Eats</h1> -->
@@ -33,6 +36,30 @@
         </div>
 
     </nav>
+
+    <section>
+    </section>
+    
+    <!-- Script to make the background image change, decide if you want to implement it to JS -->
+    <script>
+        function changeBg(){
+
+            const images = [
+            "url('./assets/images/1.webp')",
+            "url('./assets/images/2.jpg')",
+            "url('./assets/images/3.webp')",
+            "url('./assets/images/4.jpg')",
+            "url('./assets/images/5.jpg')"
+            ]
+
+            const section = document.querySelector("section")
+            const bg = images[Math.floor(Math.random() * images.length)]
+
+            section.style.backgroundImage = bg;
+        }
+
+        setInterval(changeBg, 6000)
+    </script>
 
     <script src="assets/styles.css"></script>
     <script src="assets/script.js"></script>
