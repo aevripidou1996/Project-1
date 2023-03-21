@@ -16,9 +16,12 @@
     <nav class="navbar has-shadow is-white">
         <!-- Logo -->
         <div class="navbar-brand">
-            <a class="navbar-item">
+            <a href="#Home" class="navbar-item">
                 <img src="assets/images/Screenshot 2023-03-21 190409.png" alt="Site logo" style="max-height: 70px;" class="py-2 px-2">
             </a>
+
+            <article id="Home" class="content-section"></article>
+
             <a class="navbar-burger" id="burger">
                 <span></span>
                 <span></span>
@@ -28,10 +31,10 @@
 
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
-                <a class="navbar-item">Recipes</a>
-                <a class="navbar-item">Ingredients</a>
-                <a class="navbar-item">Random Recipe Generator</a>
-                <a class="navbar-item">Resturant Locator</a>
+                <a href="#Recipes" class="navbar-item">Recipes</a>
+                <a href="#Ingredients" class="navbar-item">Ingredients</a>
+                <a href="#Random Recipe Generator" class="navbar-item">Random Recipe Generator</a>
+                <a href="#Resturant" class="navbar-item">Resturant Locator</a>
             </div>
         </div>
 
@@ -63,6 +66,23 @@
 
     <script src="assets/styles.css"></script>
     <script src="assets/script.js"></script>
+
+    <div>
+
+        <!-- Added Articles to make Navbar items responsive -->
+        
+        <article id="Recipes" class="content-section"></article>
+        <h1 class="is-size-3 is-bold is-italic">Recipes</h1>
+        
+        <article id="Ingredients" class="content-section"></article>
+        <h1 class="is-size-3 is-bold is-italic">Ingredients</h1>
+        
+        <article id="Random Recipe Generator" class="content-section"></article>
+        <h1 class="is-size-3 is-bold is-italic">Random Recipe Generator</h1>
+        
+        <article id="Resturant" class="content-section"></article>
+        <h1 class="is-size-3 is-bold is-italic">Resturant Locator</h1>
+    </div>
     
 </body>
 </html>
