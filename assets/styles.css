@@ -35,6 +35,10 @@
     margin-bottom: 30px;
 }
 
+#post_images {
+    width: 33%;
+}
+
 /* Class styling */
 
 h1 {
