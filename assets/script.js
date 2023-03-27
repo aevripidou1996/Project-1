@@ -1,5 +1,5 @@
 // API for reteraunt locator
-function googleId(){
+function googleId(input){
 	const options = {
 		method: 'GET',
 		headers: {
@@ -8,13 +8,12 @@ function googleId(){
 		}
 	};
 	
-	fetch('https://the-fork-the-spoon.p.rapidapi.com/locations/v2/auto-complete?text=milan', options)
+	return fetch(`https://the-fork-the-spoon.p.rapidapi.com/locations/v2/auto-complete?text=${input}`, options)
 		.then(response => response.json())
-		.then(response => console.log(response))
 		.catch(err => console.error(err));
 };
 
-function getCityId(){
+function getCityId(placeId, geoText){
 	const options = {
 		method: 'GET',
 		headers: {
@@ -23,14 +22,13 @@ function getCityId(){
 		}
 	};
 	
-	fetch('https://the-fork-the-spoon.p.rapidapi.com/locations/v2/list?google_place_id=ChIJu46S-ZZhLxMROG5lkwZ3D7k&geo_ref=false&geo_text=Roma%2C%20Metropolitan%20City%20of%20Rome%2C%20Italy&geo_type=locality', options)
+	return fetch(`https://the-fork-the-spoon.p.rapidapi.com/locations/v2/list?google_place_id=${placeId}&geo_ref=false&geo_text=${geoText}&geo_type=locality`, options)
 		.then(response => response.json())
-		.then(response => console.log(response))
 		.catch(err => console.error(err));
 };
 
 
-function getResterauntListData(){
+function getResterauntListData(cityId){
 	const options = {
 		method: 'GET',
 		headers: {
@@ -39,37 +37,53 @@ function getResterauntListData(){
 		}
 	};
 	
-	fetch('https://the-fork-the-spoon.p.rapidapi.com/restaurants/v2/list?queryPlaceValueCityId=348156&pageSize=10&pageNumber=1', options)
+	return fetch(`https://the-fork-the-spoon.p.rapidapi.com/restaurants/v2/list?queryPlaceValueCityId=${cityId}&pageSize=10&pageNumber=1`, options)
 		.then(response => response.json())
 		.then(data => {
-			test(data);
+			displayRestaurant(data);
 		})
 		.catch(err => console.error(err));
 	
 };
 
-googleId();
-getCityId();
-console.log(getResterauntListData());
-
-function test(array) {
+function displayRestaurant(array) {
 	console.log(array);
 	const body = document.querySelector("body");
 	for (let i=0; i<array.data.length; i++){
-		const text = document.createElement("p");
-		text.textContent = array.data[i].name;
-		body.appendChild(text);
-		console.log("restaurant" + i,array.data[i].geo.latitude, array.data[i].geo.longitude)
-		// display more than only the name of the restaurant
-		console.log("restaurant" + i,array.data[i].address_components, array.data[i].address_components)
+		const text = document.createElement("div");
+		const restaurantName = document.createElement("div")
+		restaurantName.innerHTML = array.data[i].name
+		const restaurantAddress = document.createElement("div")
+		restaurantAddress.innerHTML = `${array.data[i].address.street}, ${array.data[i].address.locality}`
+		text.appendChild(restaurantName)
+		text.appendChild(restaurantAddress)
+		text.classList.add("restaurant")
 
-
+		document.getElementById("search-results").appendChild(text)
 	}
 }
 
+function addSearchHistory(input) {
+	const searchHistory = localStorage.getItem("searchHistory")
+	if (searchHistory !== null) {
+		const newHistory = searchHistory + "," + input
+		localStorage.setItem("searchHistory", newHistory)
+	} else {
+		localStorage.setItem("searchHistory", input)
+	}
+}
 
-var resterauntNames = [ "Uovodiseppia Milano", " Ristorante Rubacuori", "The Pure Cafe", 'A Buon Rendere', 'South Garage Bistrot', 'Ristorante Mezzo'  ]
-
-
-
-
+document.getElementById("search-form").onsubmit = (event) => {
+	event.preventDefault();
+	const input = document.getElementById("search").value
+	addSearchHistory(input)
+	googleId(input)
+		.then(response => {
+			const place = response.data.geolocation[0];
+			return getCityId(place.id.id, place.name.text)
+		})
+		.then(response => {
+			const cityId = response.id_city
+			return getResterauntListData(cityId)
+		})
+}
