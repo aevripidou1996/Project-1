@@ -246,18 +246,30 @@
         <article id="Restaurant" class="content-section"></article>
         <h1 class="is-size-3 is-bold is-italic" id="restaurant-title">Restaurant <span>Locator</span></h1>
 
-        <div class="search-wrapper has-text-centered">
+        <!-- <div class="search-wrapper field has-addons">
+            <div class="control">
+                <form id="search-form" action="">
+                    <label class="label" for="search">Search Restaurants</label>
+
+                    <input class="input" type="search" id="search">
+
+                    <button class="button is-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div> -->
+
+        <div class="search-wrapper field has-addons">
             <form id="search-form" action="">
-                <label class="label" for="search">Search Resteraunts</label>
-                <input type="search" id="search">
-        
-                <button class="button" type="submit">Search</button>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Find Restaurants" id="search">
+                </div>
+                <div class="control">
+                <a class="button is-info" type="submit">
+                    Search
+                </a>
+                </div>
             </form>
         </div>
-        <div id="search-results" class='container has-text-centered'>
-        </div>
-
-    </div>
 
     <!-- Footer -->
 
