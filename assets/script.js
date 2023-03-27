@@ -1,4 +1,16 @@
-<<<<<<< HEAD
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+});
+
+bulmaCarousel.attach('#post_images', {
+    slidesToScroll:1,
+    slidesToShow: 1,
+    loop:true
+})
+
 // API for reteraunt locator
 function googleId(input){
 	const options = {
@@ -88,17 +100,3 @@ document.getElementById("search-form").onsubmit = (event) => {
 			return getResterauntListData(cityId)
 		})
 }
-=======
-const burgerIcon = document.querySelector('#burger');
-const navbarMenu = document.querySelector('#nav-links');
-
-burgerIcon.addEventListener('click', () => {
-    navbarMenu.classList.toggle('is-active');
-});
-
-bulmaCarousel.attach('#post_images', {
-    slidesToScroll:1,
-    slidesToShow: 1,
-    loop:true
-})
->>>>>>> dbc4d918d6a300d256a930d9ee5912f24fb15851
