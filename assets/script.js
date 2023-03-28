@@ -65,8 +65,10 @@ function displayRestaurant(array) {
 	for (let i=0; i<array.data.length; i++){
 		const text = document.createElement("div");
 		const restaurantName = document.createElement("div")
+		restaurantName.classList.add("resNameContainer")
 		restaurantName.innerHTML = array.data[i].name
 		const restaurantAddress = document.createElement("div")
+		restaurantAddress.classList.add("resAddressContainer")
 		restaurantAddress.innerHTML = `${array.data[i].address.street}, ${array.data[i].address.locality}`
 		text.appendChild(restaurantName)
 		text.appendChild(restaurantAddress)
