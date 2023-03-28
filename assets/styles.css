@@ -44,6 +44,10 @@
     overflow: hidden;
 }
 
+#search-results {
+    overflow: hidden;
+}
+
 /* Class styling */
 
 h1 {
