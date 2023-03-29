@@ -32,7 +32,7 @@
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
                 <a href="#Recipes" class="navbar-item">Recipes</a>
-                <a href="#Restaurant" class="navbar-item">Restaurant Locator</a>
+                <a href="./restaurants.html" class="navbar-item">Restaurant Locator</a>
             </div>
         </div>
 
@@ -42,7 +42,7 @@
     <section id="background">
     </section>
 
-    <!-- Script to make the background image change, to decide if implement it or not to JS -->
+    <!-- Script to make the background image change -->
     <script>
         function changeBg(){
             const images = [
@@ -240,8 +240,10 @@
         </div>
 
         <!-- Button link to other recipes page and api -->
-        <button class="button is-primary" onclick="window.location.href = 'recipes.html';">Find out more recipes!</button>
-    
+        <div class="has-text-centered" style="margin-top: 20px;">
+            <button  class="button is-primary is-medium" onclick="window.location.href = 'recipes.html';">Find out more recipes!</button>
+        </div>
+
     </div>
 
     <div>
@@ -249,20 +251,11 @@
         <article id="Restaurant" class="content-section"></article>
         <h1 class="is-size-3 is-bold is-italic" id="restaurant-title">Restaurant <span>Locator</span></h1>
 
-        <!-- Search restaurant search-bar -->
-
-        <div class="search-wrapper field is-grouped is-grouped-centered">
-            <form id="search-form" action="">
-                <label for="search">Search Restaurants</label>
-
-                <input class="input" type="search" id="search" placeholder="Find a restaurant">
-
-                <button class="button is-info" style="margin-top: 10px;" type="submit">Search</button>
-            </form>
+        <div class="has-text-centered" style="margin-top: 20px;">
+            <button  class="button is-info is-medium" onclick="window.location.href = 'restaurants.html';">Discover some restaurants!</button>
         </div>
-        <div class="has-text-centered" id="search-results">
-        </div>
-        
+
+    </div>
 
     <!-- Footer -->
 

@@ -20,7 +20,6 @@
     -moz-transition: background 1s;
     -o-transition: background 1s;
     transition: background 1s;
-    opacity: 0.3;
 }
 
 /* ID styling */
@@ -44,10 +43,6 @@
     overflow: hidden;
 }
 
-#search-results {
-    overflow: hidden;
-}
-
 /* Class styling */
 
 h1 {
@@ -62,16 +57,4 @@ span {
 
 .card {
     margin: 0px 40px 30px 40px;
-}
-
-.restaurant {
-    margin-bottom: 10px;
-}
-
-.resNameContainer {
-
-}
-
-.resAddressContainer {
-
 }

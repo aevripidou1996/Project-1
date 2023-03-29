@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links for stylesheet and Bulma Libraries -->
+  <link rel="resetsheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/restaurantLocator.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>It's All Eats: Restaurant Locator</title>
+</head>
+
+<body>
+
+  <nav class="navbar has-shadow is-white">
+    <!-- Logo -->
+    <div class="navbar-brand">
+        <a href="#Home" class="navbar-item">
+            <img src="assets/images/Screenshot 2023-03-21 190409.png" alt="Site logo" style="max-height: 70px;" class="py-2 px-2">
+        </a>
+
+        <article id="Home" class="content-section"></article>
+
+        <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+
+    <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+            <a href="./recipes.html" class="navbar-item">Recipes</a>
+            <a href="#search-bar" class="navbar-item">Restaurant Locator</a>
+        </div>
+    </div>
+
+</nav>
+
+  <!-- Section created to use in CSS for backgroung images -->
+  <section id="background">
+  </section>
+
+  <!-- Search restaurant search-bar -->
+  <div id="search-bar" class="has-text-centered">
+    <div class="search-wrapper field has-addons">
+      <form id="search-form" action="">
+        <label style="color: blue; font-size: large;" for="search">Search Restaurants</label>
+
+        <input class="input" type="search" id="search" placeholder="Find a restaurant">
+
+        <button class="button is-info" style="margin-top: 10px;" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+  <div class="background2">
+    <ol class="wrapper" id="search-results" role="list">
+    </ol>
+  </div>
+
+  
+
+
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>IT'S ALL EATS</strong> by <a href="https://github.com/aevripidou1996">Andrew Evripidou</a>,
+        <a href="https://github.com/Corzah97">Corey Boughton</a>, &
+        <a href="https://github.com/Purplelume">Simone Monari</a>.
+      </p>
+      <a href="https://github.com/aevripidou1996/Project-1" class="button is-danger is-outlined">Find out
+        more!</button></a>
+    </div>
+  </footer>
+
+  <script src="assets/restaurantLocator.js"></script>
+
+</body>
+
+</html>
