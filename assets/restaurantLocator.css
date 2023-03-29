@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Background styling */
+
 #background {
     position: relative;
     width: 100%;
@@ -30,13 +32,13 @@
   	transform: translate(-50%, -50%);
 }
 
+/* Class styling */
+
 .background2 {
 	background-image: url(./images/f.avif);
 	background-size: cover;
     background-position: center;
 }
-
-/* Class styling */
 
 .wrapper {
 	max-width: 600px;
