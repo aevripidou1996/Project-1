@@ -1,13 +1,11 @@
 ### It's All Eats
 
 ## Project Overview
-This is a sumbission for the first groupe project of our coding bootcamp.
+With this assignment we used two real API's to create a functional website that allows users to:
 
-With this assignment we used real API's to create a functional website that allows users to:
+* Search for restaurants in their area as well as around the world, the app will then respond by providing a list of restaurants native to that specific area with their adress.
 
-search for reasteraunts in their area as well as around the world, the app will then respond by providing a list of resteraunts native to that speciffice area with their adress.
-
-Generate random recipes from all all around the the world, while at the same time providing the user with a list of ingredients for a recipe while at the same time providing a detailed instructional video for the user to follow along with.
+* Generate random recipes from all around the world, while at the same time providing the user with a list of ingredients for that recipe. It also provide a detailed instructional video for the user to follow along with.
 
 ## list of APIs used
 
@@ -27,6 +25,9 @@ Generate random recipes from all all around the the world, while at the same tim
 
 ## Image of the application
 
+![screenshot of index.html](./assets/images/cattura.PNG)
 
-# website URL and and github url
+# Link to the deployed website
+
+[Link to the deployed website]()
 

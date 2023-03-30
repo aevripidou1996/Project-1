@@ -13,14 +13,15 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar has-shadow is-white">
         <!-- Logo -->
         <div class="navbar-brand">
-            <a href="#Home" class="navbar-item">
+            <a href="#home" class="navbar-item">
                 <img src="assets/images/Screenshot 2023-03-21 190409.png" alt="Site logo" style="max-height: 70px;" class="py-2 px-2">
             </a>
 
-            <article id="Home" class="content-section"></article>
+            <article id="home" class="content-section"></article>
 
             <a class="navbar-burger" id="burger">
                 <span></span>
@@ -31,7 +32,7 @@
 
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-end">
-                <a href="#Recipes" class="navbar-item">Recipes</a>
+                <a href="#recipes" class="navbar-item">Recipes</a>
                 <a href="./restaurants.html" class="navbar-item">Restaurant Locator</a>
             </div>
         </div>
@@ -65,12 +66,10 @@
     <div>
 
         <!-- Added Articles to make Navbar items responsive -->
-        
-        <article id="Recipes" class="content-section"></article>
+        <article id="recipes" class="content-section"></article>
         <h1 class="is-size-3 is-bold is-italic" id="recipe-title">Our Reccom<span>ended Recipes</span></h1>
 
         <!-- Created responsive cards and carousel to put the recipes api's in -->
-        
         <div id="post_images" class='container has-text-centered carousel'>
             <div class='columns'>
 
@@ -78,7 +77,6 @@
                     <div class="card">
 
                         <!-- Images -->
-
                         <article class="card-image">
                             <figure class="image is-4by3">
                               <img src="assets/images/Japanese-Dorayaki-3716.jpg" alt="Dorayaki">
@@ -86,7 +84,6 @@
                         </article>
 
                         <!-- Text -->
-
                         <article class="card-content">
                             <h3>Authentic Japanese Dorayaki</h3>
                             <br>
@@ -228,15 +225,11 @@
                 <section class='column'>
                     <div class="card">
 
-                        <!-- Images -->
-
                         <article class="card-image">
                             <figure class="image is-4by3">
                               <img src="assets/images/Pancakes.webp" alt="Pancakes">
                             </figure>
                         </article>
-
-                        <!-- Text -->
 
                         <article class="card-content">
                             <h3>Old Fashion Pancakes</h3>
@@ -411,6 +404,7 @@
         <article id="Restaurant" class="content-section"></article>
         <h1 class="is-size-3 is-bold is-italic" id="restaurant-title">Restaurant <span>Locator</span></h1>
 
+        <!-- Button link to restaurant locator page and api -->
         <div class="has-text-centered" style="margin-top: 20px;">
             <button  class="button is-info is-medium" onclick="window.location.href = 'restaurants.html';">Discover some restaurants!</button>
         </div>

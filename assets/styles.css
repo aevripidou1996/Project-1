@@ -1,9 +1,11 @@
+/* General Styling  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 /* Background styling */
 #background {
     position: relative;
@@ -23,7 +25,6 @@
 }
 
 /* ID styling */
-
 #search-form {
     margin-bottom: 20px;
 }
@@ -44,6 +45,9 @@
 }
 
 /* Class styling */
+.card {
+    margin: 0px 40px 30px 40px;
+}
 
 h1 {
     color: black;
@@ -53,10 +57,6 @@ h1 {
 
 span {
   color: #f9004d;
-}
-
-.card {
-    margin: 0px 40px 30px 40px;
 }
 
 li{

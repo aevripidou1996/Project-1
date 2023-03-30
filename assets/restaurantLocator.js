@@ -1,5 +1,4 @@
 // Script to make the background image change
-
 function changeBg(){
 	const images = [
 	"url('./assets/images/a.avif')",
@@ -18,7 +17,7 @@ function changeBg(){
 setInterval(changeBg, 6000)
 
 
-// API for reteraunt locator
+// API for restaurant locator
 function googleId(input){
 	const options = {
 		method: 'GET',

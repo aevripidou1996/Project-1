@@ -1,3 +1,4 @@
+/* General styling */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +7,6 @@
 }
 
 /* Background styling */
-
 #background {
     position: relative;
     width: 100%;
@@ -25,6 +25,7 @@
 	opacity: 0.3;
 }
 
+/* ID Styling */
 #search-bar {
 	position: absolute;
   	top: 50%;
@@ -33,7 +34,6 @@
 }
 
 /* Class styling */
-
 .background2 {
 	background-image: url(./images/f.avif);
 	background-size: cover;
