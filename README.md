@@ -1,20 +1,32 @@
-# Project-1
+### It's All Eats
 
-#project Name
+## Project Overview
+This is a sumbission for the first groupe project of our coding bootcamp.
 
-# project overview
+With this assignment we used real API's to create a functional website that allows users to:
 
-# marking criteria
+search for reasteraunts in their area as well as around the world, the app will then respond by providing a list of resteraunts native to that speciffice area with their adress.
 
-# list of APIs used
+Generate random recipes from all all around the the world, while at the same time providing the user with a list of ingredients for a recipe while at the same time providing a detailed instructional video for the user to follow along with.
 
-# the idea behind the project
+## list of APIs used
 
-# Name of developers and what they did
+- https://www.themealdb.com/api/json/v1/1/random.php
 
-# obsticles and  sucesses we had
+- https://the-fork-the-spoon.p.rapidapi.com/sale-type-menu/list
 
-# conclussion
+
+## Name of developers and there role
+
+- Andrew Evripidou (backend engineer)
+
+- Corey Boughton (frontend engineer)
+
+- Simone Monari (frontend engineer)
+
+
+## Image of the application
+
 
 # website URL and and github url
 
