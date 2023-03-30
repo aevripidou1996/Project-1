@@ -7,7 +7,7 @@ With this assignment we used real API's to create a functional website that allo
 
 search for reasteraunts in their area as well as around the world, the app will then respond by providing a list of resteraunts native to that speciffice area with their adress.
 
-Generate random recipes from all all around the the world.
+Generate random recipes from all all around the the world, while at the same time providing the user with a list of ingredients for a recipe while at the same time providing a detailed instructional video for the user to follow along with.
 
 ## list of APIs used
 
