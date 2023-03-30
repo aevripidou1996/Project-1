@@ -6,263 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links for stylesheet and Bulma Libraries -->
     <link rel="resetsheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <!-- <link rel="stylesheet" href="./assets/styles.css"> -->
+    <link rel="stylesheet" href="./assets/recipes.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
     <title>It's All Eats</title>
 </head>
 <body>
 
-    <nav class="navbar has-shadow is-white">
-        <!-- Logo -->
-        <div class="navbar-brand">
-            <a href="#Home" class="navbar-item">
-                <img src="assets/images/Screenshot 2023-03-21 190409.png" alt="Site logo" style="max-height: 70px;" class="py-2 px-2">
-            </a>
+    <div class="container">
 
-            <article id="Home" class="content-section"></article>
 
-            <a class="navbar-burger" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-        </div>
-
-        <div class="navbar-menu" id="nav-links">
-            <div class="navbar-end">
-                <a href="#Recipes" class="navbar-item">Recipes</a>
-                <a href="#Restaurant" class="navbar-item">Restaurant Locator</a>
-            </div>
-        </div>
-
-    </nav>
-    
-    <!-- Section created to use in CSS for backgroung images -->
-    <section id="background">
-    </section>
-
-    <!-- Script to make the background image change, to decide if implement it or not to JS -->
-    <script>
-        function changeBg(){
-            const images = [
-            "url('./assets/images/1.webp')",
-            "url('./assets/images/2.jpg')",
-            "url('./assets/images/3.webp')",
-            "url('./assets/images/4.jpg')",
-            "url('./assets/images/5.jpg')"
-            ]
-
-            const section = document.querySelector("section")
-            const bg = images[Math.floor(Math.random() * images.length)]
-
-            section.style.backgroundImage = bg;
-        }
-
-        setInterval(changeBg, 6000)
-    </script>
-
-    <div>
-
-        <!-- Added Articles to make Navbar items responsive -->
+        <div class="indexText">
         
-        <article id="Recipes" class="content-section"></article>
-        <h1 class="is-size-3 is-bold is-italic" id="recipe-title">Rec<span>ipes</span></h1>
-
-        <!-- Created responsive cards and carousel to put the recipes api's in -->
         
-        <div id="post_images" class='container has-text-centered carousel'>
-            <div class='columns'>
-
-                <section class='column'>
-                    <div class="card">
-
-                        <!-- Images -->
-
-                        <article class="card-image">
-                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </article>
-
-                        <!-- Text -->
-
-                        <article class="card-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Morbi id felis quis erat elementum rutrum malesuada vitae eros. 
-                                Curabitur a varius ipsum, non ultricies urna. Nulla at venenatis erat, 
-                                et dictum lectus. In a nibh dapibus purus pharetra rutrum sit amet ac lacus. 
-                                Nulla id felis pulvinar, ultrices erat eu, bibendum augue. 
-                                Fusce sed condimentum ligula, eu sagittis erat. Proin feugiat venenatis metus pellentesque porttitor. 
-                                Duis dapibus justo nisi, a porta tortor faucibus ac. Etiam eu risus nunc. 
-                                Sed tincidunt pellentesque diam, rutrum maximus dolor bibendum sed. Duis varius ex at nibh accumsan, 
-                                sit amet congue sapien bibendum.
-                            </p>
-          
-                        </article>
-                    </div>
-                </section>
-
-                <section class='column'>
-                    <div class="card">
-                        <article class="card-image">
-                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </article>
-                        
-                        <article class="card-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Morbi id felis quis erat elementum rutrum malesuada vitae eros. 
-                                Curabitur a varius ipsum, non ultricies urna. Nulla at venenatis erat, 
-                                et dictum lectus. In a nibh dapibus purus pharetra rutrum sit amet ac lacus. 
-                                Nulla id felis pulvinar, ultrices erat eu, bibendum augue. 
-                                Fusce sed condimentum ligula, eu sagittis erat. Proin feugiat venenatis metus pellentesque porttitor. 
-                                Duis dapibus justo nisi, a porta tortor faucibus ac. Etiam eu risus nunc. 
-                                Sed tincidunt pellentesque diam, rutrum maximus dolor bibendum sed. Duis varius ex at nibh accumsan, 
-                                sit amet congue sapien bibendum.
-                            </p>
-          
-                        </article>
-                    </div>
-                </section>
-
-                <section class='column'>
-                    <div class="card">
-                        <article class="card-image">
-                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </article>
-
-                        <article class="card-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Morbi id felis quis erat elementum rutrum malesuada vitae eros. 
-                                Curabitur a varius ipsum, non ultricies urna. Nulla at venenatis erat, 
-                                et dictum lectus. In a nibh dapibus purus pharetra rutrum sit amet ac lacus. 
-                                Nulla id felis pulvinar, ultrices erat eu, bibendum augue. 
-                                Fusce sed condimentum ligula, eu sagittis erat. Proin feugiat venenatis metus pellentesque porttitor. 
-                                Duis dapibus justo nisi, a porta tortor faucibus ac. Etiam eu risus nunc. 
-                                Sed tincidunt pellentesque diam, rutrum maximus dolor bibendum sed. Duis varius ex at nibh accumsan, 
-                                sit amet congue sapien bibendum.
-                            </p>
-          
-                        </article>
-                    </div>
-                </section>
-            </div>
-
-            <div class='columns'>
-
-                <section class='column'>
-                    <div class="card">
-
-                        <!-- Images -->
-
-                        <article class="card-image">
-                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </article>
-
-                        <!-- Text -->
-
-                        <article class="card-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Morbi id felis quis erat elementum rutrum malesuada vitae eros. 
-                                Curabitur a varius ipsum, non ultricies urna. Nulla at venenatis erat, 
-                                et dictum lectus. In a nibh dapibus purus pharetra rutrum sit amet ac lacus. 
-                                Nulla id felis pulvinar, ultrices erat eu, bibendum augue. 
-                                Fusce sed condimentum ligula, eu sagittis erat. Proin feugiat venenatis metus pellentesque porttitor. 
-                                Duis dapibus justo nisi, a porta tortor faucibus ac. Etiam eu risus nunc. 
-                                Sed tincidunt pellentesque diam, rutrum maximus dolor bibendum sed. Duis varius ex at nibh accumsan, 
-                                sit amet congue sapien bibendum.
-                            </p>
-          
-                        </article>
-                    </div>
-                </section>
-
-                <section class='column'>
-                    <div class="card">
-                        <article class="card-image">
-                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </article>
-                        
-                        <article class="card-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Morbi id felis quis erat elementum rutrum malesuada vitae eros. 
-                                Curabitur a varius ipsum, non ultricies urna. Nulla at venenatis erat, 
-                                et dictum lectus. In a nibh dapibus purus pharetra rutrum sit amet ac lacus. 
-                                Nulla id felis pulvinar, ultrices erat eu, bibendum augue. 
-                                Fusce sed condimentum ligula, eu sagittis erat. Proin feugiat venenatis metus pellentesque porttitor. 
-                                Duis dapibus justo nisi, a porta tortor faucibus ac. Etiam eu risus nunc. 
-                                Sed tincidunt pellentesque diam, rutrum maximus dolor bibendum sed. Duis varius ex at nibh accumsan, 
-                                sit amet congue sapien bibendum.
-                            </p>
-          
-                        </article>
-                    </div>
-                </section>
-
-                <section class='column'>
-                    <div class="card">
-                        <article class="card-image">
-                            <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                            </figure>
-                        </article>
-
-                        <article class="card-content">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                Morbi id felis quis erat elementum rutrum malesuada vitae eros. 
-                                Curabitur a varius ipsum, non ultricies urna. Nulla at venenatis erat, 
-                                et dictum lectus. In a nibh dapibus purus pharetra rutrum sit amet ac lacus. 
-                                Nulla id felis pulvinar, ultrices erat eu, bibendum augue. 
-                                Fusce sed condimentum ligula, eu sagittis erat. Proin feugiat venenatis metus pellentesque porttitor. 
-                                Duis dapibus justo nisi, a porta tortor faucibus ac. Etiam eu risus nunc. 
-                                Sed tincidunt pellentesque diam, rutrum maximus dolor bibendum sed. Duis varius ex at nibh accumsan, 
-                                sit amet congue sapien bibendum.
-                            </p>
-          
-                        </article>
-                    </div>
-                </section>
-            </div>
-        </div>
-
-        <!-- Button link to other recipes page and api -->
-        <button class="button is-primary" onclick="window.location.href = 'FirstPage.html';">Find out more recipes!</button>
-    
-    </div>
-
-    <div>
-
-        <article id="Restaurant" class="content-section"></article>
-        <h1 class="is-size-3 is-bold is-italic" id="restaurant-title">Restaurant <span>Locator</span></h1>
-
-        <!-- Search restaurant search-bar -->
-
-        <div class="search-wrapper field is-grouped is-grouped-centered">
-            <form id="search-form" action="">
-                <label for="search">Search Restaurants</label>
-
-                <input class="input" type="search" id="search" placeholder="Find a restaurant">
-
-                <button class="button is-info" style="margin-top: 10px;" type="submit">Search</button>
-            </form>
-        </div>
-        <div class="has-text-centered" id="search-results">
-        </div>
+            <h1>You Want It We Got It!!!!</h1>
         
+            <h2>Click The Meal Selector For A Feed!!!</h2>
+        
+          </div>
+        
+          <div class="indexButton">
+            <button id="getMealBtn">Meal Selector</button>
+          </div>
+        
+          <div id="mealContainer" class="mealContainer"></div>
+        
+        </div>
 
     <!-- Footer -->
 
@@ -281,4 +50,7 @@
       <script src="assets/script.js"></script>
     
 </body>
+
+<script src="assets/recipes.js"></script>
+
 </html>

@@ -58,3 +58,7 @@ span {
 .card {
     margin: 0px 40px 30px 40px;
 }
+
+li{
+    text-align: left;
+}
