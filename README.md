@@ -29,5 +29,5 @@ With this assignment we used two real API's to create a functional website that 
 
 # Link to the deployed website
 
-[Link to the deployed website]()
+[Link to the deployed website] https://aevripidou1996.github.io/Project-1/index.html
 
